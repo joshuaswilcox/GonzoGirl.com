@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ESProjectShowHiddenFilesKey</key>
+	<false/>
+	<key>ESProjectWindowState</key>
+	<dict>
+		<key>ContentSize</key>
+		<string>{1123, 650}</string>
+		<key>ProjectURL</key>
+		<string>file://localhost/Users/joshuawilcox/Projects/web-applications/gonzo/new_site/gonzo_new_site.esproj/</string>
+		<key>StateType</key>
+		<string>ProjectWindow</string>
+		<key>TopLeftPoint</key>
+		<string>{81, 934}</string>
+	</dict>
+	<key>com.macrabbit.Espresso.FileManager.DisclosureCollapsed</key>
+	<false/>
+	<key>com.macrabbit.Espresso.FileManager.FileControllerState</key>
+	<dict>
+		<key>ExpandedURLs</key>
+		<array>
+			<string>file://localhost/Users/joshuawilcox/Projects/web-applications/gonzo/new_site/css</string>
+		</array>
+	</dict>
+	<key>com.macrabbit.Espresso.Publisher.DisclosureCollapsed</key>
+	<false/>
+	<key>com.macrabbit.Espresso.Workspace.Tabs</key>
+	<dict>
+		<key>Tabs</key>
+		<array>
+			<dict>
+				<key>DocumentURL</key>
+				<string>file://localhost/Users/joshuawilcox/Projects/web-applications/gonzo/new_site/css/style.css</string>
+				<key>StateType</key>
+				<string>DefaultTab</string>
+			</dict>
+			<dict>
+				<key>DocumentURL</key>
+				<string>file://localhost/Users/joshuawilcox/Projects/web-applications/gonzo/new_site/music.html</string>
+				<key>StateType</key>
+				<string>DefaultTab</string>
+			</dict>
+			<dict>
+				<key>DocumentURL</key>
+				<string>file://localhost/Users/joshuawilcox/Projects/web-applications/gonzo/new_site/bio.html</string>
+				<key>StateType</key>
+				<string>DefaultTab</string>
+			</dict>
+			<dict>
+				<key>DocumentURL</key>
+				<string>file://localhost/Users/joshuawilcox/Projects/web-applications/gonzo/new_site/news.html</string>
+				<key>StateType</key>
+				<string>DefaultTab</string>
+			</dict>
+			<dict>
+				<key>DocumentURL</key>
+				<string>file://localhost/Users/joshuawilcox/Projects/web-applications/gonzo/new_site/merch.html</string>
+				<key>StateType</key>
+				<string>DefaultTab</string>
+			</dict>
+			<dict>
+				<key>DocumentURL</key>
+				<string>file://localhost/Users/joshuawilcox/Projects/web-applications/gonzo/new_site/home.html</string>
+				<key>StateType</key>
+				<string>DefaultTab</string>
+			</dict>
+			<dict>
+				<key>DocumentURL</key>
+				<string>file://localhost/Users/joshuawilcox/Projects/web-applications/gonzo/new_site/contact.html</string>
+				<key>StateType</key>
+				<string>DefaultTab</string>
+			</dict>
+			<dict>
+				<key>DocumentURL</key>
+				<string>file://localhost/Users/joshuawilcox/Projects/web-applications/gonzo/new_site/pics.html</string>
+				<key>StateType</key>
+				<string>DefaultTab</string>
+			</dict>
+		</array>
+	</dict>
+	<key>com.macrabbit.Espresso.WorkspaceTabs.DisclosureCollapsed</key>
+	<false/>
+</dict>
+</plist>

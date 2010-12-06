@@ -1,0 +1,116 @@
+body {
+	padding:50px 10px 10px 10px;
+	font-family:"Lucida Grande","bitstream vera sans","trebuchet ms",sans-serif,verdana;
+	height: 900px;
+	overflow:hidden;
+	position: relative;
+	margin: 0 auto;
+	width: 960px;
+}
+
+/* get rid of those system borders being generated for A tags */
+a:active {
+  outline:none;
+}
+
+:focus {
+  -moz-outline-style:none;
+}
+
+
+/* root element for scrollable */
+.vertical {  
+	/* required settings */
+	position:relative;
+	overflow: hidden;
+	/* vertical scrollers have typically larger height than width */	
+	height: 475px;	 
+	width: 100px;	
+}
+
+#pic_nav {
+	width: 100px;
+	float: right;
+	position: relative;
+	top: -500px;
+
+}
+
+/* root element for scrollable items */
+.items {	
+	position:relative;
+	/* this time we have very large space for height */	
+	height: 475px;
+	margin: 0px;
+	
+}
+
+/* single scrollable item */
+.item {
+	border-bottom:1px solid #ddd;
+	margin:10px 0;
+	padding:15px;
+	font-size:12px;
+	height:180px;
+}
+
+/* elements inside single item */
+.item img {
+	float:left;
+	margin-right:20px;
+	height:180px;
+	width:240px;
+}
+
+.item h3 {
+	margin:0 0 5px 0;
+	font-size:16px;
+	color:#456;
+	font-weight:normal;
+}
+
+/* the action buttons above the scrollable */
+#actions {
+	width:100px;
+	margin:30px 0 10px 0;	
+}
+
+#actions a {
+	font-size:11px;		
+	cursor:pointer;
+	color:#666;
+}
+
+#actions a:hover {
+	text-decoration:underline;
+	color:#000;
+}
+
+.disabled {
+	visibility:hidden;		
+}
+
+.next {
+	margin-left: 47px;
+}	
+
+.show {
+	position: relative;
+	top: -200px;
+	left: 800px;
+	border: 2px solid #444;
+	font-size: 11px;
+	background: #888;
+}
+
+.tooltip {
+	display:none;
+	position: absolute;
+	background: #559;
+	font-size:12px;
+	height:40px;
+	width:80px;
+	padding:10px;
+	color:#fff;	
+	
+}

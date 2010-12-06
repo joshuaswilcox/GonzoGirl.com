@@ -1,0 +1,130 @@
+
+/* get rid of those system borders being generated for A tags */
+a:active {
+  outline:none;
+}
+
+:focus {
+  -moz-outline-style:none;
+}
+
+#image_wrap {
+	/* dimensions */
+	width:677px;
+	height: 440px;
+	margin:15px 0 15px 40px;
+	padding:15px 0;
+
+	/* centered */
+	text-align:center;
+
+	/* some "skinning" */
+	background-color:#000;
+	border:2px solid #000;
+	outline:1px solid #000;
+	-moz-ouline-radius:4px;
+}
+
+#image_wrap img {
+	margin: 0 auto;
+	position: relative;
+	top: 15%;
+}
+
+.loading {
+	margin: 50px 0px 0px 30px;
+}
+
+/* root element for scrollable */
+.vertical {  
+	/* required settings */
+	position: relative;
+	overflow: hidden;
+	/* vertical scrollers have typically larger height than width */	
+	height: 475px;	 
+	width: 100px;	
+}
+
+#pic_nav {
+	width: 100px;
+	float: right;
+	position: relative;
+	top: -500px;
+
+}
+
+/* root element for scrollable items */
+.items {	
+	position: relative;
+	/* this time we have very large space for height */	
+	height: 475px;
+	margin: 0px;
+	
+}
+
+/* single scrollable item */
+.item {
+	border-bottom:1px solid #ddd;
+	margin:10px 0;
+	padding:15px;
+	font-size:12px;
+	height:180px;
+}
+
+/* elements inside single item */
+.item img {
+	float:left;
+	margin-right:20px;
+	height:180px;
+	width:240px;
+}
+
+.item h3 {
+	margin:0 0 5px 0;
+	font-size:16px;
+	color:#456;
+	font-weight:normal;
+}
+
+/* the action buttons above the scrollable */
+#actions {
+	width:100px;
+	margin:5px 0 5px 0;	
+}
+
+#actions a {
+	font-size:11px;		
+	cursor:pointer;
+	color:#666;
+}
+
+#actions a:hover {
+	text-decoration:underline;
+	color:#000;
+}
+
+.disabled {
+	visibility:hidden;		
+}
+
+.next {
+	margin-left: 47px;
+}	
+
+.show {
+	position: relative;
+	top: -250px;
+	left: 850px;
+}
+
+.tooltip {
+	text-align: center;
+	display:none;
+	position: relative;
+	background: #ea7c14;
+	font-size:12px;
+	height:40px;
+	width:80px;
+	padding:10px;
+	color:#000;
+}

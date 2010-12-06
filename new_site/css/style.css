@@ -1,0 +1,412 @@
+/*
+Author: Joshua Wilcox
+*/
+
+
+/* 
+# CSS contents ###################
+* 1 Reset defaults
+* 2 Layout
+* 3 Nav
+* 4 Headings
+* 5 Lists
+* 6 Images
+* 7 Links
+* 8 Forms
+* 9 Tables
+* 10 Typography 
+* 11 Other
+*/
+
+
+/* 
+# Colour reference ###################
+
+
+*/
+ 
+/*
+# Reset defaults ################### 
+*/
+
+html, body, div, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, blockquote, pre, form, fieldset, table, th, td { margin: 0; padding: 0; } 
+a:link, a:visited{text-decoration:none;outline:none;}
+html {overflow: -moz-scrollbars-vertical;}
+/*
+# Layout ################### 
+*/
+
+*{
+	
+}
+
+html, body{
+	background: #000;
+	width: 1048px;
+	margin: 0 auto;
+}
+
+@font-face {
+	font-family: "Beatty";
+	src: url("../fonts/Beatty.otf") format("opentype");
+}
+
+#home {
+	text-align: center;
+	margin: 0 auto;
+	padding-top: 150px;
+	font-family: Beatty;
+	
+}
+
+#home .home-click {
+	color: #616060;
+}
+
+#main {
+	width: 1048px;
+	vertical-align: middle;
+	margin: 0 auto -30px;
+	font-family: Beatty;
+	color: #ffffff;
+}
+
+#header {
+	height: 80px;
+	overflow: hidden;
+	border-bottom: 1px solid #464545;
+}
+
+#header-home {
+	height: 50px;
+	overflow: hidden;
+	border-bottom: 1px solid #464545;
+}
+
+#header img {
+	margin-left: 753px;	
+}
+
+#header-music {
+	height: 50px;
+	overflow: hidden;
+	border-bottom: 1px solid #464545;
+}
+
+#header-music img {
+	margin-left: 900px;
+}
+
+#main-img {
+	margin-left: 18px;
+	margin-top: 35px;
+}
+
+
+#music-body {
+	height: 477px;
+	overflow: hidden;
+}
+
+#music-player-body {
+	height: 477px;
+	background: url('../images/itunes_page2.jpg');
+}
+
+#music-player-flash {
+	position: relative;
+	left: 220px;
+	top: 70px;
+}
+
+#bottom {
+	margin-top: 5px;
+	border-top: 1px solid #464545;
+}
+
+
+#navigation {
+	margin-top: 15px;
+	margin-bottom: 50px;
+	float: left;
+	font-size: 12px;
+	position: absolute;
+}
+
+.footer-section {
+	float: left;
+	height: 75px;
+}
+
+#nav-left {
+	width: 597px;
+	margin-left: -10px;
+}
+
+#footer {
+	padding-left: 201px;
+	font-family: Beatty;
+	text-align: center;
+	margin: 15px 0px 0px 5px;
+}
+
+#nav-right {
+	float: right;
+}
+
+.credits, .credits a, .credits a:hover {
+	font-size: 10px;
+}
+
+#info-top {
+	
+}
+
+#info-mid {
+
+}
+
+#info-mid p {
+	margin-top: 30px;
+}
+
+
+#info-left {
+	width: 407px;
+	float: left;
+}
+
+.services {
+	font-size: 16px;
+	margin: 0px 5px 0px 5px;
+	color: #ea7c14;
+}
+
+#contact-body {
+	background:  #000;
+	width: 1053px;
+	height: 400px;
+}
+
+.contact-link {
+    font-family: Arial,Helvetica,sans-serif;
+    text-decoration: underline;
+}
+
+.contact-link {
+    
+}
+
+#form-header {
+    text-align: center;
+	margin: 0 auto;
+	padding: 110px 0px 60px 0px;
+}
+
+#form-header h4 {
+	font-size: 18px;
+}
+
+#form-header p {
+	font-size: 16px;
+}
+
+.form_success {
+	text-align: center;
+	margin-left: 15px;
+}
+
+.emph {
+	color: #ea7c14;
+	font-weight: bold;
+}
+
+form {
+	width: 400px;
+	height: 275px;
+	margin: 0 auto;
+	padding-top: 25px;
+}
+
+.textarea {
+	height: 100px;
+	margin: 5px;
+	padding-bottom: 15px;
+}
+
+.no-label {
+	margin-left: 50px;
+}
+
+form .row {
+	margin: 5px;
+	height: 25px;
+}
+
+form .label {
+	width: 100px;
+	padding-right: 15px;
+	float: left;
+	text-align: right;
+}
+
+form label {
+	width: 100px;
+	text-align: right;
+}
+
+form .row input {
+	width: 225px;
+}
+
+form .row #spam {
+	width: 30px;
+}
+
+form .submit {
+	position: relative;
+	bottom: -10px;
+	margin-left: 97px;
+}
+
+form .submit input{
+	width: 275px;
+	height: 30px;
+	background: white;
+	font-size: 18px;
+}
+
+form .submit input:hover {
+	color: #ffffff;
+	background: #ea7c14;
+}
+
+/*
+# Nav ################### 
+*/
+
+
+
+
+
+/*
+# Headings ################### 
+*/
+
+h1{}
+
+h2{}
+
+h3{}
+
+h4{}
+
+#logo{width:;height:;background:url(images/logo.gif) no-repeat;}
+#logo a{display:block;height:100%;width:100%;}
+#logo a span{position:absolute;left:-9999px;top:-9999px;}
+
+/*
+# Lists ################### 
+*/
+
+
+/*  Slideshow Test */
+#info-body {
+	position: relative;
+}
+
+#slideshow #slidesContainer {
+
+  width:1048px;
+  height:477px;
+  overflow:auto; /* allow scrollbar */
+  position:relative;
+}
+
+#slideshow #slidesContainer .slide {
+  margin:0 auto;
+  width:1028px; /* reduce by 20 pixels to avoid horizontal scroll */
+  height:477px;
+}
+/**
+ * Slideshow controls style rules.
+ */
+.control {
+  display:block;
+  width:82px;
+  height:42px;
+  text-indent:-10000px;
+  position:absolute;
+  z-index: 50;
+  cursor: pointer;
+}
+#leftControl {
+  bottom:15px;
+  right:0px;
+  background:transparent url(../images/back_button.jpg) no-repeat 0 0;
+}
+#rightControl {
+  bottom:15px;
+  right:0px;
+  background:transparent url(../images/next_button.jpg) no-repeat 0 0;
+}
+
+
+/*
+# Images ################### 
+*/
+
+img{border:none;}
+img.left{margin:0 10px 10px 0;}
+img.right{margin:0 0 10px 10px;}
+
+/*
+# Links ################### 
+*/
+
+a{
+	color: #ffffff;
+	font-size: 14px;
+}
+a:hover{
+	color: #ea7c14;
+	font-size: 14px;
+}
+
+/*
+# Forms ################### 
+*/
+
+
+
+/*
+# Tables ################### 
+*/
+
+
+
+/*
+# Typography ################### 
+*/
+
+
+/*
+# Other ################### 
+*/
+
+.right{float:right;}
+.left{float:left;}
+.clear{clear:both;}
+.alignleft{text-align: left;}
+.alignright{text-align: right;}
+.aligncenter{text-align: center;}
+
+/* Debug 
+* { outline: 2px dotted red }
+* * { outline: 2px dotted green }
+* * * { outline: 2px dotted orange }
+* * * * { outline: 2px dotted blue }
+* * * * * { outline: 1px solid red }
+* * * * * * { outline: 1px solid green }
+* * * * * * * { outline: 1px solid orange }
+* * * * * * * * { outline: 1px solid blue }*/

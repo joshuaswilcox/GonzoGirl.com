@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Tools standalone demo</title>
+	<!-- include the Tools -->
+	<script src="scripts/jquery.tools.min.js"></script>
+	 <script>
+		$(document).ready(function() {
+			$('#pic_nav').hide();
+			$('.show').click(function() {
+				$('#pic_nav').toggle(800);
+			});
+		});
+	</script>
+	<script>
+		$(document).ready(function() {
+			$('a.show').tooltip({postion:"top left", offset:[-10, -150]});
+		});
+	</script>
+	<link rel="stylesheet" type="text/css" href="css/scrollable-horizontal.css" />
+	
+	<style>
+	
+
+	/* styling for the image wrapper  */
+	#image_wrap {
+		/* dimensions */
+		width:677px;
+		height: 440px;
+		margin:15px 0 15px 40px;
+		padding:15px 0;
+
+		/* centered */
+		text-align:center;
+
+		/* some "skinning" */
+		background-color:#efefef;
+		border:2px solid #fff;
+		outline:1px solid #ddd;
+		-moz-ouline-radius:4px;
+	}
+	</style>
+	
+</head>
+
+<body>
+
+
+
+<!-- wrapper element for the large image -->
+<div id="image_wrap">
+
+	<!-- Initially the image is a simple 1x1 pixel transparent GIF -->
+	<img src="http://static.flowplayer.org/tools/img/blank.gif"/>
+
+</div>
+
+
+<!-- HTML structures -->
+
+
+<!-- "previous page" action -->
+<a href="#" class="show">Show</a>
+<div class="tooltip">Click to show more photos</div>
+<div id="pic_nav">
+<div id="actions">
+	<a class="prev">Prev</a>
+	<a class="next disabled">Next</a>
+</div>
+
+<!-- root element for scrollable -->
+<div class="vertical"> 
+   <!-- root element for the items -->
+	<div class="items">
+		<div>
+			 <img src="GG_BW/b1_t.jpg" alt="" />
+			 <img src="GG_BW/b2_t.jpg" alt="" />
+			 <img src="GG_BW/b3_t.jpg" alt="" />
+			 <img src="GG_BW/b4_t.jpg" alt="" />
+		</div>
+		<div>
+			 <img src="GG_BW/b5_t.jpg" alt="" />
+			 <img src="GG_BW/b6_t.jpg" alt="" />
+			 <img src="GG_BW/b7_t.jpg" alt="" />
+			 <img src="GG_BW/b8_t.jpg" alt="" />
+		</div>
+		<div>
+			 <img src="GG_BW/b9_t.jpg" alt="" />
+			 <img src="GG_BW/b10_t.jpg" alt="" />
+			 <img src="GG_BW/b11_t.jpg" alt="" />
+			 <img src="GG_BW/b12_t.jpg" alt="" />
+		</div>
+		<div>
+			 <img src="GG_BW/b13_t.jpg" alt="" />
+			 <img src="GG_BW/b14_t.jpg" alt="" />
+			 <img src="GG_BW/b15_t.jpg" alt="" />
+			 <img src="GG_BW/b16_t.jpg" alt="" />
+		</div>
+		<div>
+			 <img src="GG_BW/b17_t.jpg" alt="" />
+			 <img src="GG_BW/b18_t.jpg" alt="" />
+			 <img src="GG_BW/b19_t.jpg" alt="" />
+			 <img src="GG_BW/b20_t.jpg" alt="" />
+		</div>
+		<div>
+			 <img src="GG_BW/b21_t.jpg" alt="" />
+			 <img src="GG_BW/b22_t.jpg" alt="" />
+			 <img src="GG_BW/b23_t.jpg" alt="" />
+			 <img src="GG_BW/b24_t.jpg" alt="" />
+		</div>
+		<div>
+			 <img src="GG_BW/b25_t.jpg" alt="" />
+			 <img src="GG_BW/b26_t.jpg" alt="" />
+			 <img src="GG_BW/b27_t.jpg" alt="" />
+			 <img src="GG_BW/b28_t.jpg" alt="" />
+		</div>
+		<div>
+			 <img src="GG_BW/b29_t.jpg" alt="" />
+			 <img src="GG_BW/b30_t.jpg" alt="" />
+			 <img src="GG_BW/b31_t.jpg" alt="" />
+			 <img src="GG_BW/b32_t.jpg" alt="" />
+		</div>
+		<div>
+			 <img src="GG_BW/b33_t.jpg" alt="" />
+			 <img src="GG_BW/b34_t.jpg" alt="" />
+			 <img src="GG_BW/b35_t.jpg" alt="" />
+			 <img src="GG_BW/b36_t.jpg" alt="" />
+		</div>
+		<div>
+			 <img src="GG_BW/b37_t.jpg" alt="" />
+			 <img src="GG_BW/b38_t.jpg" alt="" />
+			 <img src="GG_BW/b39_t.jpg" alt="" />
+			 <img src="GG_BW/b40_t.jpg" alt="" />
+		</div>
+		<div>
+			 <img src="GG_BW/b41_t.jpg" alt="" />
+			 <img src="GG_BW/b42_t.jpg" alt="" />
+			 <img src="GG_BW/b43_t.jpg" alt="" />
+			 <img src="GG_BW/b44_t.jpg" alt="" />
+		</div>
+	</div>
+</div>
+<div id="actions">
+	<a class="prev">Prev</a>
+	<a class="next disabled">Next</a>
+</div>
+</div>
+<script>
+	$(function() {
+	
+		$(".vertical").scrollable({vertical: true, mousewheel: true});
+		
+		$(".items img").click(function() {
+		
+			// see if same thumb is being clicked
+			if ($(this).hasClass("active")) { return; }
+		
+			// calclulate large image's URL based on the thumbnail URL (flickr specific)
+			var url = $(this).attr("src").replace("_t", "");
+		
+			// get handle to element that wraps the image and make it semi-transparent
+			var wrap = $("#image_wrap").fadeTo("medium", 0.5);
+		
+			// the large image from www.flickr.com
+			var img = new Image();
+		
+		
+			// call this function after it's loaded
+			img.onload = function() {
+		
+				// make wrapper fully visible
+				wrap.fadeTo("fast", 1);
+		
+				// change the image
+				wrap.find("img").attr("src", url);
+		
+			};
+		
+			// begin loading the image from www.flickr.com
+			img.src = url;
+		
+			// activate item
+			$(".items img").removeClass("active");
+			$(this).addClass("active");
+		
+		// when page loads simulate a "click" on the first image
+		}).filter(":first").click();
+	});
+</script>
+
+
+</body>
+
+</html>
+
